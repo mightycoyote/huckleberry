@@ -33,10 +33,19 @@ h2 {
 
 p {
   font-size: 1.25rem;
+  font-weight: 400;
+}
+
+strong {
+  color: var(--primary);
+  font-weight: 800;
 }
 
 main {
   background-color: var(--gray-med);
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-top: 8px solid var(--gray-light);
 }
 
 .max-width-wrapper {
@@ -46,14 +55,24 @@ main {
 
 .intro-chunk {
   max-width: 415px;
-  padding: 96px 24px 64px;
+  padding: 96px 24px 44px;
+}
+
+.indented-heading {
+  background-color: var(--secondary-1);
+  padding: 16px 32px;
+  border-bottom: 8px solid var(--secondary-2);
+  width: fit-content;
+  margin-left: -32px;
+  margin-top: 0;
 }
 
 .card {
   background-color: white;
-  padding: 24px;
-}
+  padding: 8px 24px 4px 24px;
+  border-bottom: 8px solid var(--gray-light);
 
-.card p {
-  font-weight: 500;
+  & p {
+    font-weight: 500;
+  }
 }
